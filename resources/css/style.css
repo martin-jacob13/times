@@ -2,17 +2,21 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
   font-family: verdana;
   font-size: 14px;
   font-weight: bold;
-  padding:0px 20px 10px 20px;
+  padding: 0px 20px 10px 20px;
   border-bottom: 1px solid black;
 }
 
-#nav a{
-  color: black;
+nav span{
   display: inline-block;
   margin: 0px 10px;
+}
+
+a{
+  color: black;
 }
 
 #logo{
@@ -23,4 +27,113 @@ header{
 
 #logo img{
   margin-right: 10px;
+}
+
+#content{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+#content .large{
+  display: flex;
+  flex-flow: column wrap;
+  width: 630px;
+}
+
+.holding{
+  display: flex;
+  justify-content: space-around;
+}
+
+#content .medium{
+  display: flex;
+  flex-flow: column wrap;
+  width: 300px;
+}
+
+#content .small{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+}
+
+.story{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.holding .story{
+  padding: 0px 10px;
+}
+
+.headline{
+  display: flex;
+  align-items: center;
+  font-family: georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+
+h2.headline{
+  color: white;
+  height: 300px;
+}
+
+h1.headline{
+  color: white;
+  font-size: 40px;
+}
+
+.story p{
+  font-family: georgia;
+  font-size: 17px;
+  color: black;
+}
+
+#tuna{
+  display: flex;
+  background-image: url("../content/tuna.png");
+}
+
+#fall{
+  display: flex;
+  background-image: url("../content/fall.png");
+  background-size: cover;
+  text-align: center;
+}
+
+#hipster{
+  display: flex;
+  background-image: url("../content/hipster.png");
+  background-size: cover;
+  text-align: center;
+}
+
+#cat{
+  display: flex;
+  background-image: url("../content/cat.png");
+  background-size: cover;
+  text-align: center;
+}
+
+#bites{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#bite-list{
+  background-color: whitesmoke;
+  font-family: verdana;
+  font-size: 12px;
+  color: dimgray;
+}
+
+#bite-list p{
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
 }
